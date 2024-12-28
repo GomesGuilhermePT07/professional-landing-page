@@ -38,27 +38,18 @@ body{
     font-family: 'Lato';
 }
 
-/* header{
+.header{
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30rem;
-    flex-wrap: wrap;
-    padding: 0px;
     background-color: var(--dark6);
-    height: 100px;
-} */
-
-.web-page-content{
-    padding-top: 40px;
-}
-
-/* .box-img-header{
-    margin-left: -35rem;
-    height: 100%;
+    box-shadow: 1px 1px 4px var(--cyan);
+    height: 3.5em;
+    padding: 1% 10%;
 }
 
 .img-logo{
@@ -66,6 +57,16 @@ body{
     height: 100%;
 }
 
+.logo{
+    margin-left: -320px;
+}
+
+.web-page-content{
+    padding-top: 40px;
+}
+
+
+/*
 nav{
     display: flex;
     gap: 2rem;
@@ -153,7 +154,7 @@ strong{
     text-decoration: none;
     width: 200px;
     text-align: center;
-}
+}*/
 
 .box-img-main{
     max-width: 450px;
@@ -163,7 +164,7 @@ strong{
 .img-profile{
     border-radius: 50%;
     width: 100%;
-} */
+} 
 
 :is(.second-section,.fourth-section){
     background-color: var(--dark2);

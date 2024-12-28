@@ -12,33 +12,12 @@
             margin: 0;
             padding: 0;
         }
-        :root{
-            --color-white: #fff;
-            --color-dark1: #272727;
-            --color-dark2: #2d2d2d;
-            --color-dark3: #414141;
-            --color-dark4: #1c1c1c;
-            --color-dark5: #343434;
-            --color-purple: #b040ff;
-        }
-
-        .img-logo{
-            width: 70px;
-        }
 
         .header,
         .navigation_header{
             display: flex;
             flex-direction: row;
             align-items: center;
-        }
-
-        .header{
-            background-color: var(--color-dark2);
-            box-shadow: 1px 1px 4px var(--color-dark4);
-            height: 3.5em;
-            justify-content: space-between;
-            padding: 0 10%;
         }
 
         .navigation_header{
@@ -48,19 +27,12 @@
 
         .navigation_header a{
             text-decoration: none;
-            color: var(--color-purple);
-            transition: 1s;
-            font-weight: bold;
-        }
-
-        .navigation_header a:hover{
             color: var(--color-white);
         }
 
-        .active{
-            background-color: var(--color-dark3);
-            padding: 10px;
-            border-radius: 10px;
+        .navigation_header a:hover{
+            color: var(--color-dark4);
+            transition: .4s;
         }
 
         .content{
@@ -68,10 +40,6 @@
             padding-top: 5em;
             height: 100vh;
             transition: 1s;
-        }
-        
-        .logo{
-            margin-left: -100px;
         }
 
         .btn_icon_header{
@@ -123,7 +91,7 @@
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                 </svg>
             </button><!--btn_icon_header-->
-            <a href="#experiences" class="nav-links active">Experiências</a>
+            <a href="#experiences" class="nav-links">Experiências</a>
             <a href="#who-am-i" class="nav-links">Quem sou eu?</a>
             <a href="#my-projects" class="nav-links">Os meus projetos</a>
             <a href="#contact" class="nav-links">Contactos</a>
