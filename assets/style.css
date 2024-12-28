@@ -5,9 +5,7 @@
     padding: 0;
 }
 
-/* MUDANÇAS: - fazer a parte do conteúdo dos nav-links aparecerem como deve ser quando são selecionados 
-             - tratar do header (aumentar o logo e os nav-links e diminuir o tamanho do header)
-             - tratar de fazer as merdas dos commits aqui diretamente do vscode */
+/* MUDANÇAS: - tratar do footer (diminuir o tamanho do footer) */
 
 :root{
     --white: #fff;
@@ -53,7 +51,7 @@ header{
     flex-wrap: wrap;
     padding: 0px;
     background-color: var(--dark6);
-    height: 80px;
+    height: 100px;
 }
 
 .web-page-content{
@@ -66,7 +64,7 @@ header{
 }
 
 .img-logo{
-    max-width: 150px;
+    width: 100px;
     height: 100%;
 }
 

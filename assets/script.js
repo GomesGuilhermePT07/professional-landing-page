@@ -48,3 +48,21 @@ document.querySelectorAll('a.nav-links').forEach(link => {
         }
     });
 });
+
+document.getElementById('logo').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('sabermais').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    window.scrollTo({
+        top: 900,
+        behavior: 'smooth'
+    });
+});
