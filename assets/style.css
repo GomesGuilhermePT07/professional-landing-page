@@ -39,6 +39,7 @@ body{
 }
 
 .img-logo{
+    margin-left: -18.5em;
     width: 100px;
     height: 100%;
 }
@@ -54,7 +55,6 @@ body{
     background-color: var(--dark6);
     padding: 1% 10%;
     height: 3.5em;
-    
 }
 
 .header,
@@ -105,8 +105,8 @@ body{
 }
 
 @keyframes showSidebar {
-    from {margin-left: -100vw;}
-    to {margin-left: -10vw;}
+    from{margin-left: -100vw;}
+    top{margin-left: -10vw;}
 }
 
 main{
