@@ -31,3 +31,20 @@ function showProjects(data){
 }
 
 getProjects();
+
+document.querySelectorAll('a.nav-links').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 190; // Ajusta o valor aqui
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
