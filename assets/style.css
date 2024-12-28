@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MUDANÇAS: - fazer a parte do conteúdo dos nav-links aparecerem como deve ser quando são selecionados 
+             - tratar do header (aumentar o logo e os nav-links e diminuir o tamanho do header)
+             - tratar de fazer as merdas dos commits aqui diretamente do vscode */
+
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark5: #cbdad5;
+    --dark6: #2f2f46;
+    --cyan1: #70e3ea;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--dark4);
+}
+
+body{
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family: 'Lato';
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color: var(--dark6);
+    min-height: 50px;
+}
+
+.web-page-content{
+    padding-top: 40px;
+}
+
+.box-img-header{
+    margin-left: -35rem;
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 150px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+    flex-wrap: wrap;
+}
+
+.nav-links:hover{
+    color: var(--dark4);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+p{
+    letter-spacing: 2px;
+}
+
+strong{
+    color: var(--cyan1);
+}
+
+.first-section p{
+    color: var(--white);
+}
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-action:hover{
+    background-color: var(--dark3);
+    border: 1px solid var(--dark3);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+:is(.second-section,.fourth-section){
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-section ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-section ul li{
+    color: var(--dark4);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.second-section ul li:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: default;
+}
+
+.title{
+    color: var(--dark5);
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.third-section > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    font-size: 20px;
+    max-width: 600px;
+    color: var(--white);
+    text-align: center;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--dark4);
+}
+
+#my-projects-list a:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: pointer;
+}
+
+:is(.img-profile,
+.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
