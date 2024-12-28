@@ -38,6 +38,11 @@ body{
     font-family: 'Lato';
 }
 
+.img-logo{
+    width: 100px;
+    height: 100%;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -47,45 +52,62 @@ body{
     align-items: center;
     gap: 30rem;
     background-color: var(--dark6);
-    box-shadow: 1px 1px 4px var(--cyan);
-    height: 3.5em;
     padding: 1% 10%;
+    height: 3.5em;
+    
 }
 
-.img-logo{
-    width: 100px;
-    height: 100%;
-}
-
-.logo{
-    margin-left: -320px;
-}
-
-.web-page-content{
-    padding-top: 40px;
-}
-
-
-/*
-nav{
+.header,
+.navigation_header{
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.nav-links{
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a{
     text-decoration: none;
     color: var(--white);
-    flex-wrap: wrap;
 }
 
-.nav-links:hover{
-    color: var(--dark4);
+.navigation_header a:hover{
     transition: .4s;
-    text-decoration: underline;
-} */
+    color: var(--dark4);
+}
+
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
 
 main{
     display: flex;
@@ -131,7 +153,7 @@ strong{
     color: var(--white);
 }
 
-/* :is(button,.link-action){
+:is(button,.link-action){
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
@@ -140,9 +162,11 @@ strong{
 }
 
 .btn-action{
+    text-decoration: none;
     background-color: transparent;
     border: 1px solid var(--white);
     color: var(--white);
+    padding: 10px;
 }
 
 .btn-action:hover{
@@ -154,7 +178,7 @@ strong{
     text-decoration: none;
     width: 200px;
     text-align: center;
-}*/
+}
 
 .box-img-main{
     max-width: 450px;
