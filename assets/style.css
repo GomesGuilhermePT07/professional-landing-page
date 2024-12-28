@@ -198,6 +198,7 @@ strong{
 }
 
 .title{
+    font-size: 1.5rem;
     color: var(--dark5);
 }
 
@@ -228,10 +229,17 @@ strong{
 }
 
 footer{
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--dark6);
+    color: var(--white);
+    text-align: center;
+    max-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos{
+    padding-bottom: 2rem;
 }
 
 footer > div{
