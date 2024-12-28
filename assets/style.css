@@ -38,7 +38,7 @@ body{
     font-family: 'Lato';
 }
 
-header{
+/* header{
     position: fixed;
     top: 0;
     width: 100%;
@@ -50,13 +50,13 @@ header{
     padding: 0px;
     background-color: var(--dark6);
     height: 100px;
-}
+} */
 
 .web-page-content{
     padding-top: 40px;
 }
 
-.box-img-header{
+/* .box-img-header{
     margin-left: -35rem;
     height: 100%;
 }
@@ -84,7 +84,7 @@ nav{
     color: var(--dark4);
     transition: .4s;
     text-decoration: underline;
-}
+} */
 
 main{
     display: flex;
@@ -130,7 +130,7 @@ strong{
     color: var(--white);
 }
 
-:is(button,.link-action){
+/* :is(button,.link-action){
     padding: .6rem;
     font-size: .9rem;
     border-radius: 6px;
@@ -163,7 +163,7 @@ strong{
 .img-profile{
     border-radius: 50%;
     width: 100%;
-}
+} */
 
 :is(.second-section,.fourth-section){
     background-color: var(--dark2);
